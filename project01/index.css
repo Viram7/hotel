@@ -1,0 +1,266 @@
+
+    body{
+        /* background-image:url(asset/background\ image1.jpg); */
+        background-size: cover;
+        text-align: center;
+        
+        
+    }
+    #nevbar{
+        /* border: 2px solid black; */
+        width: 100%;
+     
+        background-color: rgb(234, 235, 237);
+        border-radius: 10px;
+       padding: 1%;
+       height: 30%;
+       display: inline-block;
+       overflow: visible;
+      
+    
+    }
+    #logo_div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #logo{
+        background-color: aquamarine;
+        border-radius: 75%;
+    
+        
+    }
+    #safe_home{
+        color:blue;
+       margin-top: 30px;
+       margin-left: 5px;
+        display: inline-block;
+        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+  
+ 
+     
+    #banner_box{
+       /* border: 2px solid red; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      height: 300px;
+      
+      
+      overflow: hidden; 
+      text-align: center;
+      
+      
+    
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+        
+    } 
+    .banner{
+        /* border: 2px solid greenyellow; */
+        position: absolute;
+        width: 80%;
+        height: 300px;
+        box-shadow: 0px 3px 4px 1px;
+        overflow: hidden;
+        
+    }
+ 
+    #ban1{
+        z-index: 0;
+    }
+    #roompriview{
+        /* height:210px; */
+        /* background-color: rgb(97, 63, 15); */
+        margin-bottom: 1%;
+        height: 330px;
+        overflow: hidden;
+        /* box-shadow: 10px,10px; */
+    }
+    iframe{
+       
+       
+        /* border: 3px solid red; */
+        height: 340px;
+        width: 103%;
+        
+       
+        /* background-color: rgb(97, 63, 15); */
+       
+    }
+   
+
+    #other_loction{
+    font-size: medium;
+    color: rgb(45, 91, 91);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10%;
+
+    background-color: burlywood;
+   }
+    #city_box{
+        /* border: 2px solid green; */
+        display: flex;
+     
+        height: 300px;
+        margin-left: auto;
+margin-right: auto;
+width: 80%;
+
+        flex-wrap: wrap;
+        /* background-color: gray; */
+        justify-content: center;
+        /* justify-content: space-between; */
+    
+
+        
+
+    }
+    .city{
+        border: 1px solid  rgb(84, 61, 61) ;
+        width: 28%;
+        display: inline-block;
+        /* margin-top: 5px; */
+        height: 5px;
+        text-align: center;
+        padding: 15px;
+        /* margin-top: 5px; */
+    
+        
+        
+        margin: auto;
+        position: relative;
+
+       
+    
+        
+    }
+    #about_us{
+        display: block;
+        border: 2px solid black;
+        /* height: 0%; */
+        /* margin-top: 20px; */
+        text-align: center;
+        background-color: rgb(28, 27, 27);
+    }
+    #about_us{
+        padding: 10px;
+
+    }
+    #logo{
+        margin-top: 2%;
+    }
+
+
+
+  
+    #footer_box_right{
+        /* display: inline; */
+        /* border: 2px solid black; */
+        /* height: 130px; */
+        /* margin-top: 5px; */
+    }
+
+
+    #learn_more ~ a { 
+        margin-left: 20px;
+        margin-right: 20px;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+       color: rgb(179, 157, 157);
+       font-size: small;
+       
+    }
+    #safe_room{
+        color: white;
+    font-weight:100;
+    font-size: medium;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    .socal_icon{
+        border-radius: 50%;
+        
+    }
+    #copyright{
+        font-size: small;
+        font-weight: 50;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+  
+    .drop_box_in {
+        margin-left: 100px;
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+
+        min-width: 60px;
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        z-index: 10;
+
+      }
+      .drop_box:hover .drop_box_in{
+        display: block;
+        
+    }
+    .up:hover {
+        border: 0.1px solid black;
+        border-radius: 10px;
+        background-color: rgb(181, 220, 248);
+    }
+  
+    .drop_box_in a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+       
+      }
+   
+    .drop_box{
+        position: relative;
+        display: inline-block;
+        
+    }
+    #home{
+        text-decoration: none;
+        color:cadetblue;
+        
+        
+   } 
+#home_bt{
+    margin-left: 90px;
+}
+.up{
+   height: 25px;
+    margin-left: 100px;
+    color:cadetblue;
+    border: none;
+    background-color:rgb(234, 235, 237) ;
+}
+.stay{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+
+}
+#location_logo{
+    height: 12px ;
+}
+#search_save_box{
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+.box_in{
+    /* border: 1px solid black; */
+}
+
