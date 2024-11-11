@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <form id="signup_container_upper_box"  action="confirm-password.html">
+          <a id="signup_logo_text" href="../../index.html" ><p>HOME<small><small>.com</small></p></a> 
+         <div id="signup_container">
+           <div class="google_email_continue" id="sign-in-box-1"> Sign in or create an account</div>
+           <div class="google_email_continue" id="sign-in-box-2">Unlock a world of travel with one account across Expedia, Hotels.com, and Vrbo. </div>
+           <div class="google_email_continue" id="sign-in-box-3">  <a > Sign in with Google </a> </div>
+           <div class="google_email_continue" id="sign-in-box-4">or </div>
+           <div class="google_email_continue" id="sign-in-box-5"><input id="signup_name_input_box1" type="text" placeholder="Full Name"> </div>
+           <div class="google_email_continue" id="sign-in-box-5"><input id="signup_email_input_box2" type="text" placeholder="Email"> </div>
+           <div class="google_email_continue" id="sign-in-box-6"><button id="signup_continue_box" type="button" onclick="save_user_data()" >Continue</button></div>
+           <div class="google_email_continue"id="sign-in-box-7">Other ways to sign in </div>
+           <div class="google_email_continue"id="sign-in-box-8">
+            <a id="signup_socal_icon" href="#" ><img src="../facebook.png"  height="20px"></a> 
+            <a id="signup_socal_icon" href="#" ><img src="../twiter.png"  height="20px"></a>  
+           </div>
+           
+                
+         </div>        
+    </form>
+    
+    <script src="../java_script/data.js"> </script>
+    <script>
+       let signup_name_input_box1 = document.getElementById("signup_name_input_box1");
+       let signup_email_input_box2 = document.getElementById("signup_email_input_box2");
+       function save_user_data(){
+       if(signup_name_input_box1.value =="" || signup_email_input_box2.value==""){
+            if(signup_name_input_box1.value ==""){
+                signup_name_input_box1.setAttribute("placeholder","Please enter name");
+
+            }
+            if(signup_email_input_box2.value ==""){
+               
+               signup_email_input_box2.setAttribute("placeholder","Please enter email")
+            }
+        }else{
+           
+        
+            name.push(  document.getElementById("signup_name_input_box1").value);
+            email.push(  document.getElementById("signup_email_input_box2").value);
+             document.getElementById("signup_continue_box").setAttribute("type","submit")
+            document.getElementById("signup_continue_box").click();
+      
+         
+        }
+        }
+
+    </script>
+    
+</body>
+</html>
