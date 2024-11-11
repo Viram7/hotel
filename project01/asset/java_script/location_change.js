@@ -1,0 +1,1 @@
+let location_name = "JABALPUR";

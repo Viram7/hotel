@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <form id="signup_container_upper_box" action="../../index.html" >
+          <a id="signup_logo_text" href="../../index.html" ><p>HOME<small><small>.com</small></p></a> 
+         <div id="signup_container">
+           <div class="login-password-box" id="sign-in-box-1"> Login in or create an account</div>
+           <div class="login-password-box" id="sign-in-box-2">Unlock a world of travel with one account across Expedia, Hotels.com, and Vrbo. </div>
+           <div class="login-password-box" id="sign-in-box-3">  <a > Login in with Google </a> </div>
+           <div class="login-password-box" id="sign-in-box-4">or </div>
+           
+           <div class="login-password-box" id="sign-in-box-5"><input id="signup_email_input_box" type="text" placeholder="Email"> </div>
+           <div class="login-password-box" id="sign-in-box-5"><input id="signup_password_input_box" type="password" placeholder="Password"> </div>
+           <div class="login-password-box" id="sign-in-box-6"><button id="signup_continue_box" type="button" onclick="cheak_input_boxes()">Continue</button></div>
+           <div class="login-password-box"id="sign-in-box-7">Other ways to login in </div>
+           <div class="login-password-box"id="sign-in-box-8">
+            <a id="login_socal_icon" href="#" ><img src="../facebook.png"  height="20px"></a> 
+            <a id="login_socal_icon" href="#" ><img src="../twiter.png"  height="20px"></a>  
+           </div>
+            
+                
+         </div>  
+    </form>      
+    <script src="../java_script/data.js"></script>
+   
+    <script>
+     function cheak_input_boxes(){
+        let email_input_text = document.getElementById("signup_email_input_box");
+        let password_input_text = document.getElementById("signup_password_input_box");
+       
+      if(email_input_text.value == ""||password_input_text.value == ""){
+    //    document.getElementById("signup_container_upper_box").remove();
+        if (email_input_text.value == "" ){
+            email_input_text.setAttribute("placeholder","Please enter email"); 
+            console.log(email_input_text.value);
+        }
+        if (password_input_text.value == "" ){
+            password_input_text.setAttribute("placeholder","Please enter password")
+            console.log(email_input_text.value);
+        }
+    }
+    
+    else{
+        let velidation_cheak_email = false ;
+        let velidation_cheak_password = false;
+
+        email.forEach(element => {
+            console.log(element);
+           
+            if(element == email_input_text.value){
+               
+                    velidation_cheak_email = true;
+                
+            }
+        });
+        
+        password.forEach(element =>{
+            console.log(element);
+            if(element == password_input_text.value){
+                velidation_cheak_password =true;
+            }
+        });
+
+
+        if(velidation_cheak_email == true && velidation_cheak_password == false){
+            password_input_text.value = "";
+            password_input_text.setAttribute("placeholder","worng password");
+
+        }
+        else if( velidation_cheak_email == false){
+            let confirm_value = confirm("no user found please signin");
+            if(confirm_value == true){
+                window.location.href = "signup.html";
+            }
+        }
+        else if(velidation_cheak_email == true && velidation_cheak_password == true){
+            for (let index = 0; index < name.length; index++) {
+                
+                if(email[index] == email_input_text.value && password[index] == password_input_text.value){
+                    
+                  document.getElementById("signup_continue_box").setAttribute("type","submit")
+                  document.getElementById("signup_continue_box").click();
+       
+               
+            }
+                
+            }
+       
+        
+    
+        }
+        
+       
+       
+    }
+    
+     }
+    </script>
+</body>
+</html>

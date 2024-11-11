@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/asset/css/index.css">
+    <link rel="stylesheet" href="/asset/css/navbar.css">
+    <link rel="stylesheet" href="/asset/css/footer.css">
+   
+    
 </head>
 
 <body>
@@ -13,95 +17,99 @@
         <div id="nevbar">
             <div id="logo_div">
                 <img id="logo" src="asset/logo1.png" height="50px">
-                <h5 id="safe_home">SAFE HOME</h5>
+                <h5 id="safe_home">HOME<small>.com</small></h5>
+                
             </div>
             <div id="up_box">
-            <div class="drop_box">
+                <div class="drop_box" id="home_bt1">
 
-                <button id="home_bt" class="up" type="button"><a id="home" href="index.html">HOME</a> </button>
-                <!-- <div class="drop_box_in">
+                    <button id="home_bt" class="up" type="button"><a id="home" href="index.html">HOME</a> </button>
+                    <!-- <div class="drop_box_in">
 
                 </div> -->
 
-            </div>
-            <div class="drop_box">
+                </div>
+                <div class="drop_box">
 
-                <button id="contact_us" class="up" type="button"> CONTACT US</button>
-                <div class="drop_box_in">
-                    <a class="con_drop" href="#">FAX</a>
-                    <a class="con_drop" href="#">Mail</a>
-                    <a class="con_drop" href="#">Mobile</a>
+                    <button id="contact_us" class="up" type="button"> CONTACT US</button>
+                    <div class="drop_box_in">
+                        <a class="con_drop" href="https://www.instagram.com/home.com49/">INSTAGRAM</a>
+                        <a class="con_drop" href="https://www.facebook.com/groups/homesmedia">FACEBOOK</a>
+                        <a class="con_drop" href="#">EMAIL</a>
+                    </div>
+
+                </div>
+                <div class="drop_box">
+
+                    <button id="about_us_d" class="up" type="button"> ABOUT US</button>
+                    <div class="drop_box_in">
+                        <a class="con_drop" href="#">Portfolio</a>
+                        <a class="con_drop" href="#">Meet the Team</a>
+                        <!-- <a class="con_drop" href="#" ></a>   -->
+                    </div>
+
+                </div>
+                <div class="drop_box">
+
+                    <button id="all_services" class="up" type="button"> ALL SERVICES</button>
+                    <div class="drop_box_in">
+
+                        <a class="con_drop" href="#">ASSISTED </a>
+                        <a class="con_drop" href="#">SPECIAL </a>
+                        <a class="con_drop" href="#">BUFFET</a>
+                        <a class="con_drop" href="#">CEFETERIA</a>
+                    </div>
+
+                </div>
+                <div class="drop_box">
+
+                    <button id="profile" class="up" type="button">PROFILE</button>
+                    <div class="drop_box_in">
+                        <a class="con_drop" href="asset/page/signup.html">SIGN IN</a>
+                        <a class="con_drop" href="asset/page/login.html">LOGIN IN</a>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="drop_box">
+
+                    <button id="location" class="up" type="button"> <b><a
+                                href="#other_location">JABALPUR</a></b></button>
+                                <div class="drop_box_in">
+                                    <!-- <a class="con_drop" href="asset/page/signup.html">SIGN IN</a>
+                                    <a class="con_drop" href="asset/page/login.html">LOGIN IN</a> -->
+                                    <button type="button" class="city">Jabalpur</button>
+                                    <button type="button" class="city">Mumbai</button>
+                                    <button type="button" class="city">Kolkata</button>
+                                    <button type="button" class="city">Bangalore</button>
+                                    <button type="button" class="city">Hyderabad</button>
+                                    <button type="button" class="city">Satna</button>
+            
+                                </div>
+                                <img id="location_logo" src="asset/location_logo.png" height="20px">
+                
                 </div>
 
             </div>
-            <div class="drop_box">
 
-                <button id="about_us_d" class="up" type="button"> ABOUT US</button>
-                <div class="drop_box_in">
-                    <a class="con_drop" href="#">Portfolio</a>
-                    <a class="con_drop" href="#">Meet the Team</a>
-                    <!-- <a class="con_drop" href="#" ></a>   -->
-                </div>
 
-            </div>
-            <div class="drop_box">
-
-                <button id="all_services" class="up" type="button"> ALL SERVICES</button>
-                <div class="drop_box_in">
-                   
-                    <a class="con_drop" href="#">ASSISTED SERVICE</a>
-                    <a class="con_drop" href="#">SPECIAL SERVICE</a>
-                    <a class="con_drop" href="#">BUFFET SERVICE</a>
-                    <a class="con_drop" href="#">CEFETERIA SERVICE</a>
-                </div>
-
-            </div>
-            <div class="drop_box">
-
-                <button id="profile" class="up" type="button">PROFILE</button>
-                <div class="drop_box_in">
-                    <a class="con_drop" href="signin.html">SIGN IN</a>
-                    <a class="con_drop" href="login.html">LOGIN IN</a>
-
-                 
-                </div>
-
-            </div>
-           
-          
-            <div class="drop_box">
-
-                <button id="location" class="up" type="button"> <b><a href="#other_loction">JABALPUR</a></b></button>
-                <img id="location_logo" src="asset/location_logo.png" height="20px">
-                <!-- <div class="drop_box_in">
-                  <a class="con_drop" href="#" >Portfolio</a> 
-            <a class="con_drop" href="#" >Meet the Team</a> 
-            <a class="con_drop" href="#" >Meet the Team</a>   
-                </div> -->
-
-            </div>
-        
         </div>
+        <div class="drop_box" id="search_box">
 
+            <input type="text" id="search" placeholder="Search Hotel">
+            <a href="#" id="search_a" class="up"><img id="search_image" src="asset/search1.webp" alt="search" height="15px"> </a>
 
-
-
-            <!-- <a id="home" class="up" href="#">HOME</a>
-          <!-- <a  id="contact_us" class="up" href="#">CONTACT US</a> 
-         
-
-           <a class="up" href="#">LOGIN</a>
-          <a class="up" href="#">SIGN</a> -->
         </div>
-
 
     </header>
 
-
     <div id="banner_box">
-        <img id="ban1" class="banner" src="asset/slide1.jpg">
-        <img id="ban2" class="banner" src="asset/slide2.jpg">
-        <img id="ban3" class="banner" src="asset/slide3.jpg">
+        <img id="ban1" class="banner" src="asset/hotel1.jpg">
+        <img id="ban2" class="banner" src="asset/hotel2.jfif">
+        <img id="ban3" class="banner" src="asset/hotel3.jpg">
     </div>
 
     <div id="search_save_box">
@@ -109,119 +117,67 @@
             <div class="search_box"> <img id="serch_img" class="search_save" src="asset/com.png"> <br>uyigh</div>
             <div class="search_box"> <img id="serch_img" class="search_save" src="asset/save.png"> <br>uyigh</div> -->
         <div class="box_in"> <img class="search_save" src="asset/SEARCH.png"> <br class="box_t"><b>Search
-                simply</b><br><small>Search through 5 million hotels in just a few seconds.</small></div>
+                simply</b><br><small class=" search_save_box_text">Search through 5 million hotels in just a few seconds.</small></div>
         <div class="box_in"> <img class="search_save" src="asset/com.png"> <br class="box_t"><b>Compare
-                confidently</b><br><small>Compare hotel prices from 100s of sites at once.</small></div>
+                confidently</b><br><small class=" search_save_box_text">Compare hotel prices from 100s of sites at once.</small></div>
         <div class="box_in"> <img class="search_save" src="asset/save.png"> <br class="box_t"><b>Save
-                big</b><br><small>Discover a great deal to book on our partner sites.</small></div>
+                big</b><br><small class=" search_save_box_text">Discover a great deal to book on our partner sites.</small></div>
 
 
     </div>
-    
+
     <h3 class="stay"> Stay at our top unique properties </h3>
     <h6 class="stay">From castles and villas to boats and igloos, we've got it all</h6>
     <div>
-
+        <hr>
         <div id="roompriview">
-            <iframe id="frame1"  src="asset/room.html" title="room" width="100%">
+            <iframe id="frame1" src="asset/page/room.html" title="room" width="100%">
 
             </iframe>
-        </div>
-        <div id="roompriview">
-            <iframe id="frame2"  src="asset/room2.html" title="room" width="100%">
-
-            </iframe>
-        </div>
-    </div>
-    <section>
-
-
-        <h6 id="other_loction"> More popular searches </h6>
-        <div id="city_box">
             
+        </div>
+      <hr>  <hr>
+        <div id="roompriview">
+            <iframe id="frame2" src="asset/page/room.html" title="room" width="100%">
+
+            </iframe>
+        </div>
+        <hr>
+    </div>
+
+    <section id="popular_searches">
+        <h6 id="other_location">More popular searches</h6>
+        <div id="city_box">
             <div class="city-container">
-                <img src="asset/city/1.jpg" alt="Jabalpur image" class="city-image" >
-                <br>
-                <button type="button" id="Jabalpur" class="city">Jabalpur</button>
+                <img src="asset/city/1.jpg" alt="Jabalpur image" class="city-image">
+                <button type="button" class="city">Jabalpur</button>
             </div>
             <div class="city-container">
                 <img src="asset/city/2.jpg" alt="Mumbai image" class="city-image">
-                <br>
-                <button type="button" id="Mumbai" class="city">Mumbai</button>
+                <button type="button" class="city">Mumbai</button>
             </div>
             <div class="city-container">
                 <img src="asset/city/3.jpg" alt="Kolkata image" class="city-image">
-                <br>
-                <button type="button" id="Kolkata" class="city">Kolkata</button>
+                <button type="button" class="city">Kolkata</button>
             </div>
-            
             <div class="city-container">
                 <img src="asset/city/4.jpg" alt="Bangalore image" class="city-image">
-                <br>
-                <button type="button" id="Bangalore" class="city">Bangalore</button>
+                <button type="button" class="city">Bangalore</button>
             </div>
             <div class="city-container">
-                <img src="asset/city/5.jpg" alt="Chennai image" class="city-image">
-                <br>
-                <button type="button" id="Chennai" class="city">Chennai</button>
+                <img src="asset/city/5.jpg" alt="Hyderabad image" class="city-image">
+                <button type="button" class="city">Hyderabad</button>
             </div>
             <div class="city-container">
-                <img src="asset/city/6.jpg" alt="Hyderabad image" class="city-image">
-                <br>
-                <button type="button" id="Hyderabad" class="city">Hyderabad</button>
+                <img src="asset/city/6.jpg" alt="Satna image" class="city-image">
+                <button type="button" class="city">Satna</button>
             </div>
-            <div class="city-container">
-                <img src="asset/city/7.jpg" alt="Ahmadabad image" class="city-image">
-                <br>
-                <button type="button" id="Ahmadabad" class="city">Ahmadabad</button>
-            </div>
-            <div class="city-container">
-                <img src="asset/city/8.jpg" alt="Surat image" class="city-image">
-                <br>
-                <button type="button" id="Surat" class="city">Surat</button>
-            </div>
-            <div class="city-container">
-                <img src="asset/city/9.jpg" alt="Pune image" class="city-image">
-                <br>
-                <button type="button" id="Pune" class="city">Pune</button>
-            </div>
-           <!-- <div class="city-container"> 
-                <img src="asset/city/10.jpg" alt="Jaipur image" class="city-image">
-                <br>
-                <button type="button" id="Jaipur" class="city">Jaipur</button>
-            </div>
-            <div class="city-container">
-                <img src="asset/city/11.jpg" alt="Kozhikode image" class="city-image">
-                <br>
-                <button type="button" id="Kozhikode" class="city">Kozhikode</button>
-            </div>
-             <div class="city-container">
-                <img src="asset/city/12.jpg" alt="Malappuram image" class="city-image">
-                <br>
-                <button type="button" id="Malappuram" class="city">Malappuram</button>
-            </div>
-             <div class="city-container">  
-                <img src="asset/city/13.jpg" alt="Lucknow image" class="city-image">
-                <br>
-                <button type="button" id="Lucknow" class="city">Lucknow</button>
-            </div>
-            <div class="city-container">
-                <img src="asset/city/14.jpg" alt="Thrissur image" class="city-image">
-                <br>
-                <button type="button" id="Thrissur" class="city">Thrissur</button>
-            </div>
-            <div class="city-container">
-                <img src="asset/city/15.jpg" alt="Kochi image" class="city-image">
-                <br>
-                <button type="button" id="Kochi" class="city">Kochi</button>
-            </div> -->
-            
-            
-            <!-- <div id="jabalpur" class="city"> jabalpur</div>
-        <div id="jabalpur" class="city"> jabalpur</div>
-        -->
+
+
         </div>
     </section>
+    <br>
+
     <footer id="about_us">
         <div id="footer_box_left">
             <div id="footer_box_right">
@@ -236,19 +192,24 @@
                     <a href="#">CONTACT</a>
                     <a href="#">POlICY</a>
                     <br><br>
-                    <a href="#"><img class="socal_icon" id="twiter" src="asset/twiter.png" height="20px" </a>
-                        <a href="#"><img class="socal_icon" id="facebook" src="asset/facebook.png" height="20px" </a>
-                            <a href="#"><img class="socal_icon" id="insta" src="asset/insta.png" height="20px" </a>
+                    <a href="#"><img class="socal_icon" id="twiter" src="asset/twiter.png" height="20px"> </a>
+                    <a href="#"><img class="socal_icon" id="insta" src="asset/insta.png" height="20px"> </a>
+                    <a href="#"><img class="socal_icon" id="facebook" src="asset/facebook.png" height="20px"> </a>
+                    <p id="copyright">Copyright @2021 All rights reserved | This is made by VIRAM  </p>
+                            
 
-                                <p id="copyright">Copyright @2021 All rights reserved | This is made by VIRAM KUSHWAHA
-                                </p>
+                               
 
             </div>
 
     </footer>
-    <script src="asset/cheak.js"></script>
-   <script src="index.js"></script>
-   
+    <!-- <script src="asset/cheak.js"></script> -->
+    <script src="asset/java_script/location_change.js"></script>
+    <script src="asset/java_script/index.js"></script>
+    <!-- <hy>jy</hy> -->
+ 
+    
+
 </body>
 
 </html>
