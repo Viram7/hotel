@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaside Hotel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+           overflow-x: hidden;
+        }
+
+       
+        .header {
+            background-image: url('../portfilio_image.webp'); 
+            
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        .header button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d4a059;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .header button:hover {
+            background-color: #b88842;
+        }
+
+       
+        .info-bar {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            background-color: #4a2c1c;
+            color: white;
+        }
+
+        .info-bar div {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .rooms {
+            background-color: #f3f3f3;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .rooms h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .room-container {
+            display: flex;
+            /* background-image: url("../15.jpg"); */
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .room {
+            background-color: white;
+            /* background-image: url(); */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+        }
+
+        .room img {
+            width: 100%;
+            height: auto;
+        }
+
+        .room-details {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .room-details h3 {
+            font-size: 22px;
+            color: #4a2c1c;
+        }
+
+        .room-details p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .room-details button {
+            padding: 10px 15px;
+            background-color: #d4a059;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .room-details button:hover {
+            background-color: #b88842;
+        }
+
+        
+        .luxury {
+            background-color: #a0754f;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .luxury h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .luxury p {
+            max-width: 600px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .luxury img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="header">
+        <h1>Enjoy Your Dream Vacation</h1>
+        <p>Book a room to enjoy the most luxurious stay</p>
+        <button>Make a Reservation</button>
+    </div>
+
+    
+    <div class="info-bar">
+        <div>WiFi Included</div>
+        <div>In-room Dining</div>
+        <div>Pet-Friendly Rooms</div>
+    </div>
+
+    
+    <section class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-container">
+            <div class="room">
+                <img src="../2.jpg" alt="Standard Room">
+                <div class="room-details">
+                    <h3>Standard Room</h3>
+                    <p>Comfortable room with all basic amenities</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="room">
+                <img src="../7.jpg" alt="Deluxe Room">
+                <div class="room-details">
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious room with additional facilities</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="room">
+                <img src="../4.jpg" alt="Premium Room">
+                <div class="room-details">
+                    <h3>Premium Room</h3>
+                    <p>Luxurious room with premium amenities</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="luxury">
+        <h2>The Luxury Experience You'll Remember</h2>
+        <p>Our rooms are designed with elegance and comfort in mind. Enjoy a wide range of premium amenities and a seamless service experience that will make your stay unforgettable.</p>
+        <img src="../hotel_bath.webp" alt="Luxury Bathroom">
+    </section>
+
+</body>
+</html>

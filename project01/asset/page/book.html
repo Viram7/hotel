@@ -5,120 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link  rel="stylesheet" href="../css/navbar.css" >
+    <link  rel="stylesheet" href="../css/footer.css" >
     <style>
-        #booking {
-            /* padding: 5%, 5%, 5%, 0%; */
-            border: 2px solid;
-            text-align: center;
-            background-color: white;
-            height: 200px/'';
-            width: 250px;
-            /* margin-left: 35%; */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 5%;
-        }
-
-        #b_y_p_r {
-            font-size: larger;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-style: oblique;
-        }
-
-        #name_box {
-            width: 95%;
-            border: 1px solid black;
-            height: 30px;
-
-        }
-
-        #date_box {
-            width: 95%;
-            border: 1px solid black;
-            height: 30px;
-            margin-bottom: 2%;
-        }
-        select{
-            border: none;
-            /* padding: 0px; */
-        }
-
-        #room1 {
-            width: 10%;
-            /* padding: 5%; */
-
-
-        }
-
-        #adult1 {
-            width: 10%;
-            /* padding: 1%; */
-
-        }
-
-        #child1 {
-            width: 10%;
-            /* padding: 1%; */
-        }
-
-        #find_room {
-            width: 100%;
-            height: 50px;
-
-            background-color: darkorange;
-            margin-top: 2%;
-        }
-        .box{
-            display:inline-block;
+        iframe{
+            height: 280px;
+            border: 2px solid black;
         }
     </style>
 </head>
 
 <body>
-    <booking>
-        <div id="booking">
-            <p id="b_y_p_r"> Book your perfect room</p>
-            <form action="">
-                <div id="box1" class="box">
-                    <label id="name">FULL NAME</label><br>
-                    <input id="name_box" type="text" placeholder="name"><br>
-                    <label id="date">DATE</label><br>
-                    <input id="date_box" type="text" placeholder="enter date">
+    <header>
+        <div id="nav_container" >
+            
+                <div class="drop_box" id="safe_home_box">
+    
+                    <p id="safe_home">HOME<small id="safe_home">.com</small></p>
                 </div>
-                <div id="box2" class="box">
-                    <label id="room">ROOM</label>
-                    <select id="room1" >
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
     
-                    </select>
-                    <label id="adult">ADULT</label>
-                    <select id="adult1">s
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                <div   id="drop_box_mid" >   
+                <div class="drop_box" >
     
-                    </select>
-                    <label id="child">CHILD</label>
-                    <select id="child1">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                    <button id="home_bt" class="up" type="button"><a id="home" href="index.html">HOME</a> </button>
     
-                    </select><br>
-                    <button id="find_room" type="button" onclick="addtext(), print()">BOOK ROOM</button>
                 </div>
+                <div class="drop_box">
+    
+                    <button id="contact_us" class="up" type="button"> CONTACT US</button>
+                    <div class="drop_box_in">
+                        <a class="con_drop" href="https://www.instagram.com/home.com49/">INSTAGRAM</a>
+                        <a class="con_drop" href="https://www.facebook.com/groups/homesmedia">FACEBOOK</a>
+                        <a class="con_drop" href="#">EMAIL</a>
+                    </div>
+                </div>
+                <div class="drop_box">
+                    <button id="about_us_d" class="up" type="button"> ABOUT US</button>
+                    <div class="drop_box_in">
+                        <a class="con_drop" href="portfolio.html">Portfolio</a>
+                        <a class="con_drop" href="#">Meet the Team</a>
+                        <!-- <a class="con_drop" href="#" ></a>   -->
+                    </div>
+                  
+                </div>
+                <div class="drop_box">
+                    <button id="profile" class="up" type="button">PROFILE</button>
+                        <div class="drop_box_in">
+                            <a class="con_drop" href="../page/signup.html">SIGN IN</a>
+                            <a class="con_drop" href="../page/login.html">LOGIN IN</a>
+    
+    
+                        </div>
+                </div>
+                <div class="drop_box">
+                    <button id="location" class="up" type="button"> <b><a
+                        href="#other_location">JABALPUR</a></b></button>
+                        
+                        <div class="drop_box_in">
+                            <!-- <a class="con_drop" href="asset/page/signup.html">SIGN IN</a>
+                            <a class="con_drop" href="asset/page/login.html">LOGIN IN</a> -->
+                            <button type="button" class="city">Jabalpur</button>
+                            <button type="button" class="city">Mumbai</button>
+                            <button type="button" class="city">Kolkata</button>
+                            <button type="button" class="city">Bangalore</button>
+                            <button type="button" class="city">Hyderabad</button>
+                            <button type="button" class="city">Satna</button>
+    
+                        </div>
+                      
+        
+                </div>
+                <div class="drop_box"> 
 
-            </form>
+                    <img id="location_logo" src="/asset/location_logo.png" height="15px">
+                </div>
+            </div>
+                <div class="drop_box" id="search_box" >
+                    <input type="text" id="search" placeholder="Search Hotel">
+                <a href="#" id="search_a" class="up"><img id="search_imag" src="/asset/search1.webp" alt="search" > </a>
+    
+                </div>
         </div>
-    </booking>
-    <h1 style="display: none;" id="room_book"> ROOM BOOKED </h1>
-    <!-- <script src="cheak.jss"> </script> -->
-    <script src="../java_script/book.js"> </script>
+    </header>
+
+<iframe src="/asset/page/full_book.html">
+
+</iframe>
+    <footer id="about_us">
+        <div id="footer_box_left">
+            <div id="footer_box_right">
+                <img id="logo" src="../logo1.png" height="50px">
+                <h1 id="safe_room"> HOME.com</h2>
+
+                    <h6 id="learn_more"></h6>
+                    <a href="index.html">HOME</a>
+                    <a href="../page/about_us_page.html">ABOUT</a>
+
+                    <a href="#">REVIEWS</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">POlICY</a>
+                    <br><br>
+                    <a href="#"><img class="socal_icon" id="twiter" src="../twiter.png" height="20px"> </a>
+                    <a href="https://www.instagram.com/home.com49/"><img class="socal_icon" id="insta" src="../insta.png" height="20px"> </a>
+                    <a href="https://www.facebook.com/groups/homesmedia"><img class="socal_icon" id="facebook" src="../facebook.png" height="20px"> </a>
+                    <p id="copyright">Copyright @2021 All rights reserved | This is made by VIRAM  </p>
+                            
+
+                               
+
+            </div>
+
+    </footer>
 
 </body>
 

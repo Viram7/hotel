@@ -4,7 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         .room_box{
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        *{
+            font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+        }
+        .room_box{
             border: 2px solid rgb(241, 234, 234);
             border-radius:5px;
             margin: 0.5%;
@@ -21,16 +27,19 @@
             margin-left: 10px;
            color: rgba(10, 7, 7, 0.817);
            font-size: small;
-           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+           /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         b{
             font-size: medium;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
             color: black;
+            font-weight:normal;
         }
         .room_box:hover {
             background-color: rgba(133, 238, 203, 0.363);
-            border: 2px solid black;
+            border: 1px solid black;
             /* box-shadow: 4px,40px,4px,4px; */
             /* height: 1200px; */
             /* display: inline; */
@@ -49,22 +58,22 @@
     <!-- <hr> -->
  <div id="container">
     <!-- <hr> -->
-    <div class="room_box"><a href="book.html" onclick="c_frame1()" ><img src="../1.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>18 available</p> <p class="room_no"></p>  </div>
-    <div class="room_box"> <a href="book.html"onclick="c_frame1()"><img src="../2.jpg" height="100px"></a> <p><b>Apartments</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>14 available</p>  <p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../3.jpg" height="100px">  </a><p><b>Resorts</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>12 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../4.jpg" height="100px"> </a><p><b>Vilas</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>18 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../5.jpg" height="100px"> </a><p><b>Cabins</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>6 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../6.jpg" height="100px"> </a><p><b>Holiday Home</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>4 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../7.jpg" height="100px"> </a><p><b>Guest House</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>8 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../8.jpg" height="100px"> </a><p><b>B&Bs</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>9 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../9.jpg" height="100px"> </a><p><b>Homestays</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>17 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../10.jpg" height="100px"> </a><p><b>Campsite</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>5 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../12.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>13 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../13.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>5 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../14.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>2 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../15.jpg" height="100px"></a> <p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>12 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../16.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>9 available</p><p class="room_no"></p></div>
-    <div class="room_box"><a href="book.html"onclick="c_frame1()"><img src="../17.jpg" height="100px"></a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>1 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"   onclick="c_frame1()" ><img src="../1.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>18 available</p> <p class="room_no"></p>  </div>
+    <div class="room_box"> <a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../2.jpg" height="100px"></a> <p><b>Apartments</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>14 available</p>  <p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../3.jpg" height="100px">  </a><p><b>Resorts</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>12 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../4.jpg" height="100px"> </a><p><b>Vilas</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>18 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../5.jpg" height="100px"> </a><p><b>Cabins</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>6 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../6.jpg" height="100px"> </a><p><b>Holiday Home</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>4 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../7.jpg" height="100px"> </a><p><b>Guest House</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>8 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../8.jpg" height="100px"> </a><p><b>B&Bs</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>9 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../9.jpg" height="100px"> </a><p><b>Homestays</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>17 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../10.jpg" height="100px"> </a><p><b>Campsite</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>5 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../12.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>13 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../13.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>5 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../14.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>2 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../15.jpg" height="100px"></a> <p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>12 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../16.jpg" height="100px"> </a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>9 available</p><p class="room_no"></p></div>
+    <div class="room_box"><a target="_parent" href="location_page.html"  onclick="c_frame1()"><img src="../17.jpg" height="100px"></a><p><b>Hotel</b></p> <p> 10 Nov-11 Nov, 2 adult </p> <p>1 available</p><p class="room_no"></p></div>
     
 </div>
 <!-- <hr> -->

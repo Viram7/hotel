@@ -1,12 +1,15 @@
 
 var i = 1;
 setInterval(() => {
-    if (i === 3) {
+    if (i === 4) {
+       
+       
+        document.getElementById("banner_box").style.backgroundImage = `url("../hotel${i}.jpg")`;
         i = 1;
-        document.getElementById(`ban${i + 1}`).style.zIndex = 0;
     }
-    document.getElementById(`ban${i}`).style.zIndex = 5;
-
+    // document.getElementById(`ban${i}`).style.zIndex = 5;
+   
+    document.getElementById("banner_box").style.backgroundImage = `url("../hotel${i}.jpg")`;
 
     i++;
 
@@ -35,16 +38,35 @@ document.querySelectorAll(".city").forEach(element => {
 
 
 
-function c_frame2(){
-    // let iframe = document.getElementById('frame2');
-// iframe.parentNode.removeChild(iframe);
+let cheak_frame = false;
 
-    
-window.history.back();
-}
 function c_frame1(){
-    // alert();
-    // let iframe = document.getElementById('frame1');
+    console.log("click");
+    if(cheak_frame == false){
+        window.history.back();
+    }
+
+   cheak_frame = true;
+    window.location = "/asset/page/location_page.html";
+    window.history.back();
+  
+    
+}
+
+function c_frame2(){
+    console.log("click");
+    if(cheak_frame == true){
+        window.history.back();
+    }
+
+   cheak_frame = false;
+   
+    window.location = "/asset/page/location_page.html";
+    window.history.back();
     window.history.back();
 }
+
+
+
+
 

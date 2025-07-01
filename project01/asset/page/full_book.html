@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asset/css/book.css">
+    
+</head>
+<body>
+    <booking>
+        <div id="booking">
+            <p id="b_y_p_r"> Book your perfect room</p>
+            <form action="">
+                <div id="box1" class="box">
+                    <label id="name">FULL NAME</label><br>
+                    <input id="name_box" type="text" placeholder="name"><br>
+                    <label id="date">DATE</label><br>
+                    <input id="date_box" type="text" placeholder="enter date">
+                </div>
+                <div id="box2" class="box">
+                    <label id="room">ROOM</label>
+                    <select id="room1" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+    
+                    </select>
+                    <label id="adult">ADULT</label>
+                    <select id="adult1">s
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+    
+                    </select>
+                    <label id="child">CHILD</label>
+                    <select id="child1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+    
+                    </select><br>
+                    <button id="find_room" type="button" onclick="addtext(), print()">BOOK ROOM</button>
+                </div>
+
+            </form>
+        </div>
+    </booking>
+    <h1 style="display: none;" id="room_book"> ROOM BOOKED </h1>
+    <!-- <script src="cheak.jss"> </script> -->
+    <script src="../java_script/book.js"> </script>
+
+</body>
+</html>

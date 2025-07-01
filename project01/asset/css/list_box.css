@@ -6,6 +6,8 @@ list_hotel{
     justify-content: center;
 }
 
+
+
 .list_box{
     margin-top: 10px;
     padding: 2px;
@@ -98,10 +100,45 @@ height: 95%;
    
     /* background-color: black; */
 }
+/* #hotel_rate{
+    display: none;
+    /* direction: none; 
+   text-decoration: none; 
+   color: black;
+   
 
+    /* display: flex; 
+    align-items: center;
+
+    border: 1px solid black;
+    height: 100%;
+    
+  
+} */
+
+#hotel_rate{
+    transition-duration: 1s;
+    width: 0%;
+    text-decoration: none;
+    /* display: flex; */
+    justify-content: center;
+    /* border: 1px solid black; */
+    
+}
 
 #rate_box:hover {
     font-size: 0%;
     /* font-weight: 300; */
     background-color: rgb(220, 220, 230);
+}
+ #rate_box:hover #hotel_rate{
+    /* all: unset; */
+    display: flex;
+    width: 100%;
+    
+  
+
+} 
+#hotel_rate:hover button{
+    background-color: rgb(161, 92, 92);
 }
